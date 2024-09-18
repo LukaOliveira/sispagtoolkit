@@ -25,6 +25,12 @@ pip install sispagtoolkit
 
 Os exemplos de uso da biblioteca podem ser encontrados na pasta `examples` do repositório. Lá você encontrará demonstrações detalhadas de como utilizar a biblioteca para diferentes tipos de pagamentos.
 
+## Arquivos Derivados
+
+Este projeto contém dois arquivos derivados da biblioteca [Febraban Python](https://github.com/starkbank/febraban-python). A utilização desses arquivos está de acordo com os termos da licença original, que pode ser encontrada no [repositório da biblioteca](https://github.com/starkbank/febraban-python/blob/master/LICENSE.txt).
+
+Se houver qualquer questão relacionada ao uso de partes dessa biblioteca, sinta-se à vontade para consultar a licença original ou abrir uma issue no [repositório do GitHub](https://github.com/LukaOliveira/sispagtoolkit) ou no [repositório do GitLab](https://gitlab.com/lukaoliveira/sispagtoolkit).
+
 ## Contribuições
 
 Contribuições são bem-vindas! Se você encontrar algum problema, por favor, abra uma issue no [repositório do GitHub](https://github.com/LukaOliveira/sispagtoolkit) ou no [repositório do GitLab](https://gitlab.com/lukaoliveira/sispagtoolkit).
@@ -32,3 +38,7 @@ Contribuições são bem-vindas! Se você encontrar algum problema, por favor, a
 ## Licença
 
 Este projeto está licenciado sob a **Licença MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
+
+
