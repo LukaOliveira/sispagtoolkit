@@ -77,7 +77,7 @@ transacao = Transacao(
 
 
 
-arquivo = Arquivo(usuario)
+arquivo_cnab = Arquivo(usuario)
 
 lote = LotePagamentoTEF(usuario)
 
@@ -86,6 +86,8 @@ lote.novoSegmento(
 )
    
    
-arquivo.setNovoLote(lote)
+arquivo_cnab.setNovoLote(lote)
 
-open('SCNAB240.rem', 'w+').write(arquivo.getConteudo())
+# Salva o arquivo CNAB com a codificação apropriada
+with open('SCNAB240.rem', 'w+', encoding='iso-8859-1') as file:
+    file.write(arquivo_cnab.getConteudo())
