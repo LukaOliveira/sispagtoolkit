@@ -32,6 +32,8 @@ from .lotes.pagamentos_e_transferencias.segmentos.segmento_a import SegmentoA
 from .lotes.pagamentos_e_transferencias.segmentos.segmento_b import SegmentoB
 from .lotes.pagamentos_e_transferencias.segmentos.trailer_lote import TrailerLote
 
+from .utils.break_line import break_line
+
 class LotePagamentoTEF():
     def __init__(self, info_usuario):
         
