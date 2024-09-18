@@ -18,7 +18,7 @@
 Você pode instalar a biblioteca diretamente via **pip**:
 
 ```bash
-pip install sispagtoolkit
+pip install SispagToolKit
 ```
 
 ## Exemplos de Uso
