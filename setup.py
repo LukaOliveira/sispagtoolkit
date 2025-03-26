@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="SispagToolKit",
-    version="0.1.1",
+    version="0.1.3",
     description="Biblioteca para geração de remessas de pagamento CNAB240 baseada para o sistema SISPAG da instituição Itaú.",
     long_description=long_description,  # Apontando para o conteúdo do README
     long_description_content_type="text/markdown",  # Definindo o formato como Markdown
