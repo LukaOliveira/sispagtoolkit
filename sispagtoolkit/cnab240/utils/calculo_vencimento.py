@@ -31,8 +31,11 @@ import datetime
 
 def calculo_vencimento(fator_vencimento):
 
+     if(int(str(fator_vencimento)[0]) >= 1 and int(str(fator_vencimento)) < 9633):
+          data_base = datetime.datetime.strptime('22022025', '%d%m%Y')
+          data_vencimento = data_base + datetime.timedelta(days=int(fator_vencimento[1::]))
+     else:
+          data_base       = datetime.datetime.strptime('07101997', '%d%m%Y')
+          data_vencimento = data_base + datetime.timedelta(days=int(fator_vencimento))
     
-    data_base       = datetime.datetime.strptime('07101997', '%d%m%Y')
-    data_vencimento = data_base + datetime.timedelta(days=int(fator_vencimento))
-    
-    return data_vencimento.strftime('%d%m%Y')
+     return data_vencimento.strftime('%d%m%Y')

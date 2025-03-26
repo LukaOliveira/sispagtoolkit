@@ -116,6 +116,8 @@ class PagamentoConcessionaria():
         self.segmentoo.setVencimentoNominal(conta.vencimento_nominal)
         self.segmentoo.setValorNominal(cod_barras.valor)
         
+        self.segmentoo.setSeuNumero(conta.seu_numero)
+        
         self.segmentoo.setPagamento(conta.data_pagamento)
         
         

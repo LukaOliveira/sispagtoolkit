@@ -28,8 +28,9 @@ Original Repository:
 
 
 class Conta():
-    def __init__(self, nome_concessionaria, cod_barras, vencimento_nominal, data_pagamento):
+    def __init__(self, nome_concessionaria, cod_barras, vencimento_nominal, data_pagamento, seu_numero=''):
         self.nome_concessionaria = nome_concessionaria
         self.cod_barras          = cod_barras
         self.vencimento_nominal  = vencimento_nominal
         self.data_pagamento      = data_pagamento
+        self.seu_numero          = seu_numero

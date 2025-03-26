@@ -2,3 +2,4 @@
 build
 dist
 SispagToolKit.egg-info
+*.pyc

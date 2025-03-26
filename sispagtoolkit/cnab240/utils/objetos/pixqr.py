@@ -28,18 +28,12 @@ Original Repository:
 
 
 class PIXQR():
-    def __init__(self, qr):
-        self.qr      = qr
+    def __init__(self, chave):
+        self.qr      = chave
         self.payload = self.get_payload()
         
-    def get_payload(self):
-        tipo_qr = self.qr[14:16]
+    def get_payload(self):      
+        qrcode  = self.qr.lower().split('br.gov.bcb.pix')
         
-        qrcode = self.qr.lower().split('br.gov.bcb.pix')
-        
-        if(tipo_qr == '99'):
-            payload = qrcode[1][4:81]
-        else:
-            payload = qrcode[1][4:76]
-            
+        payload = qrcode[0][0:60]    
         return payload
