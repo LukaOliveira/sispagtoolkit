@@ -28,8 +28,9 @@ Original Repository:
 
 
 class Boleto():
-    def __init__(self, cod_barras, data_pagamento, favorecido, seu_numero='1'):
+    def __init__(self, cod_barras, data_pagamento, favorecido, seu_numero='1', desconto='0'):
         self.cod_barras     = cod_barras
         self.favorecido     = favorecido
         self.data_pagamento = data_pagamento
         self.seu_numero     = seu_numero
+        self.desconto       = desconto
