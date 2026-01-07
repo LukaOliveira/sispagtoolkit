@@ -125,6 +125,7 @@ class SegmentoA():
         #O posicionamento dos campos muda de caso os bancos sejam diferentes 341 (Itau) ou 409 (Unibanco)
         if(str(favorecido.banco) in ('341', '409')):
             estrutura = [
+                (14, 17, 3, numeric, "001" if len(favorecido.identificador) == 11 else "002"), #Faz o banco validar se o CPF/CNPJ se fato pertence ao favorecido
                 (23, 24, 1, numeric,                  0), #Zeros
                 (24, 28, 4, numeric, favorecido.agencia), #Agencia Favorecido
                 (29, 35, 6, numeric,                  0), #Zeros

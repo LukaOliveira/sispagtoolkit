@@ -116,7 +116,7 @@ class LiquidacaoBoletos():
         self.segmentoj.setCodigoDeBarras(cod_barras)
         self.segmentoj.setNomeFavorecido(boleto.favorecido.nome)
         self.segmentoj.setVencimentoNominal(cod_barras.vencimento_nominal)
-        self.segmentoj.setValores(cod_barras.valor, 0, 0)
+        self.segmentoj.setValores(cod_barras.valor, boleto.desconto, 0)
         self.segmentoj.setPagamento(boleto.data_pagamento, cod_barras.valor)
         self.segmentoj.setSeuNumero(boleto.seu_numero)
         
